@@ -1,0 +1,49 @@
+{
+  "authors" : {
+    "menta" : "mentasdk.vip@gmail.com"
+  },
+  "dependencies" : {
+    "MentaUnifiedSDK" : [
+      ">= 7.06.01"
+    ],
+    "MentaVlionBaseSDK" : [
+      ">= 7.06.01"
+    ],
+    "MentaVlionSDK" : [
+      ">= 7.06.01"
+    ],
+    "NTESQuickPass" : [
+      "~> 3.7.10"
+    ]
+  },
+  "description" : "Menta Combo SDK provides task, membership, wallet and user authentication services.",
+  "homepage" : "https://www.mentamob.com/",
+  "libraries" : [
+    "c++"
+  ],
+  "license" : "Custom",
+  "name" : "MentaComboSDK",
+  "platforms" : {
+    "ios" : "12.0"
+  },
+  "pod_target_xcconfig" : {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" : "arm64"
+  },
+  "resources" : "MentaComboSDK.bundle",
+  "source" : {
+    "flatten" : false,
+    "http" : "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaComboSDK/1.0.1.0/MentaComboSDK-1.0.1.0-422B990D-D586-4B0F-8D1C-BE075E18E566.tar.bz2",
+    "sha256" : "17bd92ab282d2e75bcc9d9137dd9e288a4698c1ba1a45c0622d2f3a1d391e2aa"
+  },
+  "static_framework" : true,
+  "summary" : "Menta Combo iOS SDK.",
+  "user_target_xcconfig" : {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" : "arm64",
+    "OTHER_LDFLAGS" : "$(inherited) -ObjC"
+  },
+  "vendored_frameworks" : "MentaComboSDK.xcframework",
+  "version" : "1.0.1.0",
+  "weak_frameworks" : [
+    "AppTrackingTransparency"
+  ]
+}
