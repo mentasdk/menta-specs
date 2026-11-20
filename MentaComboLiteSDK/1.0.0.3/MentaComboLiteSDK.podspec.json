@@ -1,0 +1,36 @@
+{
+  "authors" : {
+    "menta" : "mentasdk.vip@gmail.com"
+  },
+  "dependencies" : {
+    "MentaUnifiedSDK" : [
+      ">= 7.06.01"
+    ],
+    "MentaVlionBaseSDK" : [
+      ">= 7.06.01"
+    ],
+    "MentaVlionSDK" : [
+      ">= 7.06.01"
+    ]
+  },
+  "description" : "Menta Combo Lite SDK provides task advertising and task progress management.",
+  "homepage" : "https://www.mentamob.com/",
+  "license" : "Custom",
+  "name" : "MentaComboLiteSDK",
+  "platforms" : {
+    "ios" : "12.0"
+  },
+  "source" : {
+    "flatten" : false,
+    "http" : "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaComboLiteSDK/1.0.0.3/MentaComboLiteSDK-1.0.0.3-C767CB0B-48D7-49EF-BCC4-F8EB13448792.tar.bz2",
+    "sha256" : "db8a15f73f6718481058625ab9a0da61e438ef651355406f586370e7e9dd00d0"
+  },
+  "static_framework" : true,
+  "summary" : "Menta Combo Lite iOS task advertising SDK.",
+  "user_target_xcconfig" : {
+    "OTHER_LDFLAGS" : "$(inherited) -ObjC"
+  },
+  "vendored_frameworks" : "MentaComboLiteSDK.xcframework",
+  "version" : "1.0.0.3",
+  "weak_frameworks" : "AppTrackingTransparency"
+}
