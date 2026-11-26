@@ -1,0 +1,39 @@
+{
+  "name": "MentaLingYeAdapter",
+  "version": "7.06.05",
+  "summary": "MentaLingYeAdapter.",
+  "description": "This is the MentaLingYeAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaLingYeAdapter/7.06.05/MentaLingYeAdapter-7.06.05-30A2FF30-11B7-416B-A091-DD3DECF00FBC.tar.bz2",
+    "sha256": "b850ce1ba8fc57e9cd8559490c54ce890d401efe2e966d3cc673e2069a11e834",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.05"
+    ],
+    "LYMobSDK": [
+      "= 1.0.7"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaLingYeAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

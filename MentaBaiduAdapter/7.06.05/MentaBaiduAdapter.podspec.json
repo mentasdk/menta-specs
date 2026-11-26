@@ -1,0 +1,55 @@
+{
+  "name": "MentaBaiduAdapter",
+  "version": "7.06.05",
+  "summary": "MentaBaiduAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaBaiduAdapter/7.06.05/MentaBaiduAdapter-7.06.05-930A1295-C7FE-422C-97D6-27E4B59AA426.tar.bz2",
+    "sha256": "a621d136ae3e25076d74a1001b3cd00671009eb839755aa3cf251c0a46d87c76",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Accelerate",
+    "AssetsLibrary",
+    "CoreLocation",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "ImageIO",
+    "MapKit",
+    "Photos",
+    "UIKit"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.05"
+    ],
+    "BaiduMobAdSDK": [
+      ">= 0"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaBaiduAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

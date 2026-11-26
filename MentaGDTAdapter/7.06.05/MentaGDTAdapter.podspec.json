@@ -1,0 +1,55 @@
+{
+  "name": "MentaGDTAdapter",
+  "version": "7.06.05",
+  "summary": "MentaJDYunAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaGDTAdapter/7.06.05/MentaGDTAdapter-7.06.05-93BF33BB-1BB5-4368-8ABF-94373A1096E3.tar.bz2",
+    "sha256": "a13e67dce6e3b8828ed76b518326da6c38ab3fb22ee584e75add1e67b8865a56",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Accelerate",
+    "AssetsLibrary",
+    "CoreLocation",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "ImageIO",
+    "MapKit",
+    "Photos",
+    "UIKit"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.05"
+    ],
+    "GDTMobSDK": [
+      ">= 0"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaGDTAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

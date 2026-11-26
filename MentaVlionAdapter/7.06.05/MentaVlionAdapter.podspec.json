@@ -1,0 +1,88 @@
+{
+  "name": "MentaVlionAdapter",
+  "version": "7.06.05",
+  "summary": "MentaVlionAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaVlionAdapter/7.06.05/MentaVlionAdapter-7.06.05-7717A8F9-0545-405F-8176-071CA88EA7A4.tar.bz2",
+    "sha256": "7d47cc9b033bbcd4f49e23bdc24d68b0670d62104ce0bb60212539387186b0c5",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AssetsLibrary",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "CoreText",
+    "Foundation",
+    "ImageIO",
+    "JavaScriptCore",
+    "MapKit",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "Photos",
+    "QuartzCore",
+    "Security",
+    "StoreKit",
+    "SystemConfiguration",
+    "UIKit",
+    "WebKit"
+  ],
+  "libraries": [
+    "bz2",
+    "c++",
+    "c++abi",
+    "iconv",
+    "resolv",
+    "sqlite3",
+    "xml2",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AppTrackingTransparency",
+    "DeviceCheck"
+  ],
+  "static_framework": true,
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC $(inherited) -ObjC",
+    "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES": "YES",
+    "LD_RUNPATH_SEARCH_PATHS": "$(inherited) /usr/lib/swift @executable_path/Frameworks",
+    "LIBRARY_SEARCH_PATHS": "$(inherited) \"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\" \"$(SDKROOT)/usr/lib/swift\""
+  },
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.05"
+    ],
+    "MentaVlionSDK": [
+      "= 7.06.05"
+    ],
+    "MentaVlionBaseSDK": [
+      "= 7.06.05"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaVlionAdapter.xcframework"
+  ],
+  "resources": [
+    "MV37AdSDKPrivacy.bundle",
+    "MVAdapterSDK.bundle",
+    "MentaVL47AdSDKPrivacy.bundle",
+    "MentaVLADXSDKPrivacy.bundle"
+  ]
+}
