@@ -1,0 +1,74 @@
+{
+  "name": "MentaVlionLiteAdapter",
+  "version": "7.06.06",
+  "summary": "MentaVlionLiteAdapter.",
+  "description": "The lightweight MentaVlion adapter without bundled third-party adapters.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaVlionLiteAdapter/7.06.06/MentaVlionLiteAdapter-7.06.06-C2C51133-5B9B-444F-807F-D4DD8A54038D.tar.bz2",
+    "sha256": "475fe520a1dc03c0c4ed4ba9c9eb6490d8b830590047c6ce9ebf7c224e4a1a85",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AssetsLibrary",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "CoreText",
+    "ImageIO",
+    "JavaScriptCore",
+    "MapKit",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "Photos",
+    "QuartzCore",
+    "Security",
+    "StoreKit",
+    "SystemConfiguration",
+    "UIKit"
+  ],
+  "libraries": [
+    "bz2",
+    "c++",
+    "c++abi",
+    "iconv",
+    "resolv",
+    "sqlite3",
+    "xml2",
+    "z"
+  ],
+  "weak_frameworks": [
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC $(inherited) -ObjC"
+  },
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.06"
+    ],
+    "MentaVlionSDK": [
+      "= 7.06.06"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaVlionLiteAdapter.xcframework"
+  ]
+}

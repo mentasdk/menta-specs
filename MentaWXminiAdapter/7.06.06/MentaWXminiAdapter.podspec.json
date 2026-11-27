@@ -1,0 +1,74 @@
+{
+  "name": "MentaWXminiAdapter",
+  "version": "7.06.06",
+  "summary": "MentaWXminiAdapter.",
+  "description": "This is the MentaWXminiAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "wangzeyong@mentamob.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaWXminiAdapter/7.06.06/MentaWXminiAdapter-7.06.06-737DCDFD-9FAD-4721-A1C4-15D62ED68ABE.tar.bz2",
+    "sha256": "665876971f81cc695e1a85fcc87d71123a2b74ee34fb5310f5d21c04d6436dc3",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreTelephony",
+    "CoreText",
+    "ImageIO",
+    "JavaScriptCore",
+    "MapKit",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "QuartzCore",
+    "Security",
+    "StoreKit",
+    "SystemConfiguration",
+    "UIKit"
+  ],
+  "libraries": [
+    "bz2",
+    "c++",
+    "c++abi",
+    "iconv",
+    "resolv",
+    "sqlite3",
+    "xml2",
+    "z"
+  ],
+  "weak_frameworks": [
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaVlionBaseSDK": [
+      "= 7.06.06"
+    ],
+    "MentaUnifiedSDK": [
+      "= 7.06.06"
+    ],
+    "WechatOpenSDK-XCFramework": [
+      ">= 0"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaWXminiAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

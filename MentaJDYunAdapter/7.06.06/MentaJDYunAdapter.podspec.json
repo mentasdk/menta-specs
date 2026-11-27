@@ -1,0 +1,55 @@
+{
+  "name": "MentaJDYunAdapter",
+  "version": "7.06.06",
+  "summary": "MentaJDYunAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaJDYunAdapter/7.06.06/MentaJDYunAdapter-7.06.06-B3B7DBF4-2B51-4D1D-9CE0-C31CE12B324A.tar.bz2",
+    "sha256": "aec76e64f0e8a216c76ba70b14d120388efdd90f54448d25fc24d0df4d5d9508",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Accelerate",
+    "AssetsLibrary",
+    "CoreLocation",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "ImageIO",
+    "MapKit",
+    "Photos",
+    "UIKit"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.06"
+    ],
+    "JADYun": [
+      "= 2.6.8"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaJDYunAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "MentaKSAdapter",
+  "version": "7.06.06",
+  "summary": "MentaKSAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaKSAdapter/7.06.06/MentaKSAdapter-7.06.06-D27F59DA-DDD0-4C09-9690-345EE5534647.tar.bz2",
+    "sha256": "b583bf480273cb4800bbea5d25f436c768fa1ed962ae8778f85d6510353106e2",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "Accelerate",
+    "AssetsLibrary",
+    "CoreLocation",
+    "CoreMotion",
+    "CoreServices",
+    "CoreTelephony",
+    "ImageIO",
+    "MapKit",
+    "Photos",
+    "UIKit"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.06"
+    ],
+    "KSAdSDK": [
+      ">= 0"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaKSAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}
