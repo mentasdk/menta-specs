@@ -1,0 +1,72 @@
+{
+  "name": "MentaCSJAdapter",
+  "version": "7.06.07",
+  "summary": "MentaCSJAdapter.",
+  "description": "This is the MentaVlionAdapter. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaCSJAdapter/7.06.07/MentaCSJAdapter-7.06.07-DD043162-3D36-4710-9035-7ABC31203501.tar.bz2",
+    "sha256": "4a48c3a33e4b656cc5967db93f61c82d75c172c5640afd44d7b6b3d0d2ae5523",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreTelephony",
+    "CoreText",
+    "ImageIO",
+    "JavaScriptCore",
+    "MapKit",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "QuartzCore",
+    "Security",
+    "StoreKit",
+    "SystemConfiguration",
+    "UIKit",
+    "WebKit"
+  ],
+  "libraries": [
+    "bz2",
+    "c++",
+    "c++abi",
+    "iconv",
+    "resolv",
+    "sqlite3",
+    "xml2",
+    "z"
+  ],
+  "weak_frameworks": [
+    "AppTrackingTransparency",
+    "DeviceCheck"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaUnifiedSDK": [
+      "= 7.06.07"
+    ],
+    "Ads-CN": [
+      ">= 0"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaCSJAdapter.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

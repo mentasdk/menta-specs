@@ -1,0 +1,50 @@
+{
+  "name": "MentaUnifiedSDK",
+  "version": "7.06.07",
+  "summary": "MentaUnifiedSDK.",
+  "description": "This is the Menta Ad SDK. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com/",
+  "license": "Custom",
+  "authors": {
+    "menta": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaUnifiedSDK/7.06.07/MentaUnifiedSDK-7.06.07-03D6A76E-12BD-4E1A-B2B8-2F4BBA4143A9.tar.bz2",
+    "sha256": "1543206b55d8e592d7985efa1b52aef98ce7c315f28ea2728284ce9e88623073",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreTelephony",
+    "MessageUI",
+    "SafariServices",
+    "StoreKit",
+    "SystemConfiguration"
+  ],
+  "libraries": [
+    "c++"
+  ],
+  "weak_frameworks": [
+    "AdSupport",
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaVlionBaseSDK": [
+      "= 7.06.07"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaUnifiedSDK.xcframework"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

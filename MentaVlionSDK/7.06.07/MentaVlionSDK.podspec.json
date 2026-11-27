@@ -1,0 +1,68 @@
+{
+  "name": "MentaVlionSDK",
+  "version": "7.06.07",
+  "summary": "advlion",
+  "description": "advlion SDK",
+  "homepage": "https://github.com/shicymenta/MentaVlionSDK",
+  "license": "Custom",
+  "authors": {
+    "wzy": "mentasdk.vip@gmail.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaVlionSDK/7.06.07/MentaVlionSDK-7.06.07-5DBBDAEF-EAB0-42FD-AEA4-33C6E3BBA504.tar.bz2",
+    "sha256": "0c32b1a89a6d5c9196d6a52132f62ae7158b9fa7210bb5dfdd41c7ad77729542",
+    "flatten": false
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreTelephony",
+    "CoreText",
+    "ImageIO",
+    "JavaScriptCore",
+    "MapKit",
+    "MediaPlayer",
+    "MobileCoreServices",
+    "QuartzCore",
+    "Security",
+    "StoreKit",
+    "SystemConfiguration",
+    "UIKit",
+    "WebKit"
+  ],
+  "libraries": [
+    "bz2",
+    "c++",
+    "c++abi",
+    "iconv",
+    "resolv",
+    "sqlite3",
+    "xml2",
+    "z"
+  ],
+  "static_framework": true,
+  "dependencies": {
+    "MentaVlionBaseSDK": [
+      "= 7.06.07"
+    ]
+  },
+  "vendored_frameworks": [
+    "MentaVlionSDK.xcframework"
+  ],
+  "weak_frameworks": [
+    "AppTrackingTransparency"
+  ],
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}

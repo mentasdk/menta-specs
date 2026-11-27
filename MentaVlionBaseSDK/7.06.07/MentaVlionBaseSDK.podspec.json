@@ -1,0 +1,55 @@
+{
+  "name": "MentaVlionBaseSDK",
+  "version": "7.06.07",
+  "summary": "MentaVlionBaseSDK",
+  "description": "This is the MentaVlionBaseSDK. Please proceed to https://www.mentamob.com for more information.",
+  "homepage": "https://www.mentamob.com",
+  "license": "Custom",
+  "authors": {
+    "advlion": "mentasdk.vip@gmail.com"
+  },
+  "source": {
+    "http": "https://bj-menta-sdk.oss-cn-beijing.aliyuncs.com/iOS/MentaVlionBaseSDK/7.06.07/MentaVlionBaseSDK-7.06.07-A8C589CF-1D70-4DD8-AF6C-15985B6FFFB1.tar.bz2",
+    "sha256": "759982f0d527332f05c0dc8dab5a6cf1ff6e32daa9f5f7ee811e1aa4996f98fe",
+    "flatten": false
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AssetsLibrary",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreMotion",
+    "CoreTelephony",
+    "MessageUI",
+    "MobileCoreServices",
+    "SafariServices",
+    "StoreKit",
+    "SystemConfiguration"
+  ],
+  "libraries": [
+    "c++",
+    "sqlite3",
+    "z"
+  ],
+  "weak_frameworks": [
+    "WebKit",
+    "AppTrackingTransparency"
+  ],
+  "static_framework": true,
+  "vendored_frameworks": [
+    "MentaVlionBaseSDK.xcframework"
+  ],
+  "resources": [
+    "MVBaseSDK.bundle"
+  ],
+  "dependencies": {
+  },
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  }
+}
